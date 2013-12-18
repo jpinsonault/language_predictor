@@ -1,0 +1,143 @@
+Kerbal Space Program Forum - Powered by vBulletinRegister Help 
+    
+ Remember Me?
+Website
+Store
+Forum
+New PostsWhat's New?FAQCalendarCommunity Forum Actions Quick Links
+Articles
+Blogs
+Wiki
+Spaceport
+KSP-TV
+Youtube
+Facebook
+Tumblr
+Twitter
+IRC Chat
+Submit
+Advanced Search
+HomeForumGeneral KSPGameplay Questions and Tutorials[Unanswered] Delta V and the MUN
+
+Thursday December 12th - Friday December 13th on KSP-TV!
+Results 1 to 6 of 6
+Thread: Delta V and the MUN
+Thread Tools
+Search Thread
+Display
+30th September 2013, 11:36 #1
+vetrox  vetrox is offline
+Spacecraft Engineer
+
+Join Date
+Jun 2013
+Posts
+204
+Delta V and the MUN
+Ages ago I saw a challenge to land on the mun and back with a spaceplane without refueling on stock parts. I've been trying this challenge for weeks on and off and to be honest have gotten pretty good at making some efficient and pretty genius spaceplane designs on stock parts.
+
+However I finally have a good design that gets me to an 80km kerbin orbit with 2100m/s of dv.
+
+Ok so using this delta v map I need 1710 ms to land on the mun. Now obviously using that map. Im not going to be getting it home however after landing i will have mabe 20m/s of dv left. So im already 400m/s behind!
+
+Is there some magic trick that I'm missing here. Is it worth actually attaining a munar orbit or should i just aim to crash on the mun and skip the whole orbit thing? would this be more efficient? Im jsut stumped as I can seem to get close to the delta v that these maps seem to require!
+Last edited by vetrox; 30th September 2013 at 11:41.
+Reply With Quote Reply With Quote
+30th September 2013, 12:02 #2
+blizzy78  blizzy78 is offline
+Rocket Scientist
+  
+blizzy78's Avatar Join Date
+May 2013
+Posts
+851
+Blog Entries
+22
+Quote Originally Posted by vetrox  View Post
+Im not going to be getting it home however after landing i will have mabe 20m/s of dv left. So im already 400m/s behind!
+Not sure what the question is here. 2100 m/s is most definitely not enough to make it to the Mun, land, and come back again. So take more fuel with to begin with?
+Achievements Plugin - earn 132 achievements while playing - API open to plugin authors
+Toolbar Plugin - draggable/resizable buttons toolbar - API open to plugin authors
+Internet Relay Chat (IRC) Plugin - chat in-game while playing
+Interactive in-game tutorial plugins: Docking / / Rendezvous / / Moon Travel
+Online engine cluster calculator
+Missions: Eos Program, 44th Moon Landing Anniversary
+Reply With Quote Reply With Quote
+30th September 2013, 12:30 #3
+vetrox  vetrox is offline
+Spacecraft Engineer
+
+Join Date
+Jun 2013
+Posts
+204
+According to that delta v map. From a munar orbit it should cost me 640 ms to land on the mun. However it costs me closer to 1000. So i was wondering the best way to go about landing. Do i do a retrograde burn from a higher orbit and drop straight down onto the surface and kill off my speed at the last possible moment? Do i do a gentle burn until touch down. I just cant seem to land on the mun using less than 1000dv and its really bugging me as it makes planning ahead difficult. I dont want any unessesary weight. Im trying to make it as efficient as possible so i dont want to take more than i need.
+
+EDIT:Now that i read my own post back...the title of the thread isnt exactly relevant -.-
+Last edited by vetrox; 30th September 2013 at 12:36.
+Reply With Quote Reply With Quote
+30th September 2013, 12:34 #4
+Moon Goddess  Moon Goddess is offline
+Junior Rocket Scientist
+
+Moon Goddess's Avatar Join Date
+Apr 2013
+Posts
+736
+Blog Entries
+2
+1710 is optimal best case.
+
+That's assuming you never translate horizontally you land perfectly always burning exactly the right amount to be exactly at the right speed you need to be at the right altitude at the right time.
+
+Basically, always round up.
+
+Reply With Quote Reply With Quote
+30th September 2013, 12:42 #5
+vetrox  vetrox is offline
+Spacecraft Engineer
+
+Join Date
+Jun 2013
+Posts
+204
+Im pretty spot on at getting to the mun with that deltav map. But I just suck at the landing. What would be the best way to land and from what altitude. I have been trying all sorts from 20km to 5km with varying results.
+
+Hmm...Google may well be my friend here! *scurries off to google and youtube*
+Reply With Quote Reply With Quote
+30th September 2013, 13:07 #6
+Specialist290  Specialist290 is online now
+Retro Moderator
+  
+Specialist290's Avatar Join Date
+Apr 2013
+Posts
+1,572
+Blog Entries
+1
+In my experience, landing always takes a fair bit more delta-v than the map tells you because the map assumes a more-or-less perfect "reverse-launch" style landing, whereas for the most part you're actually going to be burning a fair bit more fuel on the final descent simply to ensure that you're coming down at a safe speed. Thus, I'd say pack enough delta-v that you have about half again the amount the charts tell you. Fortunately, you can generally take off again with a delta-v amount much closer to what the chart tells you.
+
+Aiming for a direct impact is actually less efficient in the long run for the same reason that trying to launch straight up from Kerbin is, only in reverse -- you're fighting against gravity the whole way down. What you really want to do is aim for a trajectory that gives you a low (10-20 km) periapsis, then circularize there and begin your descent from that orbit.
+Quote Originally Posted by Whackjob  View Post
+I do not fear failure. Failure is data. I fear not learning from failure. Failure to learn from failure is stupidity.
+The Drawing Board - An unofficial KSP tutorial and resource library for players both new and old. Need help, or just looking for new tricks to learn? Start here!
+Reply With Quote Reply With Quote
+Quick Navigation Gameplay Questions and Tutorials Top
+« Previous Thread | Next Thread »
+Posting Permissions
+You may not post new threads
+You may not post replies
+You may not post attachments
+You may not edit your posts
+ 
+BB code is On
+Smilies are On
+[IMG] code is On
+[VIDEO] code is On
+HTML code is Off
+Forum Rules
+
+Contact Us Kerbal Space Program Archive Top
+All times are GMT -5. The time now is 00:16.
+Powered by vBulletin® Version 4.2.1 
+Copyright © 2013 vBulletin Solutions, Inc. All rights reserved.
