@@ -5,8 +5,20 @@ import json
 from glob import glob
 from pprint import pprint
 from ngram_utils import build_ngrams
+from Predictor import Predictor
+from Predictor import NGram
 
 args = None
+
+language_files = [
+    {"language": "english", "training_file": "english_language.txt"},
+    {"language": "spanish", "training_file": "spanish_language.txt"},
+    {"language": "french", "training_file": "french_language.txt"},
+    {"language": "german", "training_file": "german_language.txt"},
+    {"language": "polish", "training_file": "polish_language.txt"},
+    {"language": "romanian", "training_file": "romanian_language.txt"},
+    {"language": "latin", "training_file": "latin_language.txt"},
+]
 
 
 def parse_args():
@@ -20,8 +32,25 @@ def parse_args():
 
 
 def main():
+    # print(get_language_files())
+    predictor = Predictor(get_language_files())
+    best_guess = predictor.predict(get_input_string())
+
+    print(best_guess.language)
+
+
+def get_language_files():
+    language_files = glob("*_language.txt")
+
+    language_names = [filename.split("_language")[0] for filename in language_files]
+    zipped = zip(language_names, language_files)
+
+    language_dict = [{"language": line[0], "training_file": line[1]} for line in zipped]
+    return language_dict
+
+####################################################
+def old_main():
     language_ngrams = load_all_ngrams()
-    
     
     input_ngrams = build_ngrams(get_input_string())
 

@@ -26,7 +26,7 @@ def build_ngrams(text):
     for ngram, count, in ngrams_count.iteritems():
         ngrams_percentage[ngram] = count / float(num_ngrams)
 
-    return ngrams_percentage 
+    return ngrams_percentage
 
 
 def get_ngrams(word):
