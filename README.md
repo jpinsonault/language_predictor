@@ -6,7 +6,8 @@ Simple project I made for fun to build language models and predict what language
 I use the `NGram` class from [http://blog.ebookglue.com/write-language-detector-50-lines-python/](http://blog.ebookglue.com/write-language-detector-50-lines-python/), which I've modified slightly. Check it out for the theory as to why this predictor works. 
 
 I've included some language files with text I got from Project Gutenberg
-Included languages: `chinese, dutch, english, french, german, japanese, latin, ancient-greek, modern-greek, polish, romanian, russian, spanish`
+
+Included languages: chinese, dutch, english, french, german, japanese, latin, ancient-greek, modern-greek, polish, romanian, russian, spanish
 
 To create a new language reference text, just slap any old text into a file and load it in (as described below). The only thing it does before building the language model is reduce all whitespace down to single spaces. It also has unicode support. 
 

@@ -30,8 +30,9 @@ def main():
     predictor = Predictor(get_language_files())
     best_guess = predictor.predict(get_input_string())
 
-    print("Language is: {}".format(best_guess.language))
+    print("Language is: {}".format(best_guess.language_name))
 
+####################################################
 
 def get_language_files():
     language_files = glob("*_language.txt")
@@ -43,7 +44,6 @@ def get_language_files():
     return language_dict
 
 
-####################################################
 
 def get_input_string():
     if args.string:
