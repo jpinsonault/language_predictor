@@ -8,7 +8,9 @@ I use the `NGram` class from [http://blog.ebookglue.com/write-language-detector-
 I've included some language files with text I got from Project Gutenberg
 Included languages: `chinese, dutch, english, french, german, japanese, latin, ancient-greek, modern-greek, polish, romanian, russian, spanish`
 
-To create a new language reference text, just slap any old text into a file and load it in (as described below). The only thing it does before building the language model is reduce all whitespace down to single spaces. It also has unicode support. One thing to note is that languages with a lot of diacritics (á, é, č, ć, đ, etc) might not perform well if you input a string without the marks, as it treats them as completely separate characters. For these languages make sure to construct the model file with text that includes the marks and text that doesn't have them, so the model has a variety to work with.
+To create a new language reference text, just slap any old text into a file and load it in (as described below). The only thing it does before building the language model is reduce all whitespace down to single spaces. It also has unicode support. 
+
+One thing to note is that languages with a lot of diacritics (á, é, č, ć, đ, etc) might not perform well if you input a string without the marks, as it treats them as completely separate characters. For these languages make sure to construct the model file with text that includes the marks and text that doesn't have them, so the model has a variety to work with.
 
 Using the `Predictor` Class
 ========
