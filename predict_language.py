@@ -39,7 +39,7 @@ def get_language_files():
     language_names = [filename.split("_language")[0] for filename in language_files]
     zipped = zip(language_names, language_files)
 
-    language_dict = [{"language": line[0], "training_file": line[1]} for line in zipped]
+    language_dict = [{"language_name": line[0], "training_file": line[1]} for line in zipped]
     return language_dict
 
 
