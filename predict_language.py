@@ -20,9 +20,9 @@ def parse_args():
     global args
 
     parser = argparse.ArgumentParser()
-    parser.add_argument('-s', dest='string')
-    parser.add_argument('-f', dest="text_file")
-
+    group = parser.add_mutually_exclusive_group(required=True)
+    group.add_argument('-f', dest='text_file')
+    group.add_argument('-s',dest='input_string')
     args = parser.parse_args()
 
 
@@ -46,8 +46,8 @@ def get_language_files():
 
 
 def get_input_string():
-    if args.string:
-        return args.string
+    if args.input_string:
+        return args.input_string
     else:
         with open(args.text_file, 'r') as open_file:
             return open_file.read()
