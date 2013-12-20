@@ -14,20 +14,21 @@ One thing to note is that languages with a lot of diacritics (á, é, č, ć, đ
 
 Using the `Predictor` Class
 ========
-    from Predictor import Predictor
-    language_files = [
-        {"language": "english", "training_file": "english_language.txt"},
-        {"language": "spanish", "training_file": "spanish_language.txt"},
-        {"language": "german", "training_file": "german_language.txt"},
-    ]
-    
-    predictor = Predictor(language_files)
-    best_guess = predictor.predict("Ich bin ein Berliner")
-    
-    print("Language is: {}".format(best_guess.language))
+```python
+from Predictor import Predictor
+language_files = [
+    {"language": "english", "training_file": "english_language.txt"},
+    {"language": "spanish", "training_file": "spanish_language.txt"},
+    {"language": "german", "training_file": "german_language.txt"},
+]
 
-    # prints: Language is: german
+predictor = Predictor(language_files)
+best_guess = predictor.predict("Ich bin ein Berliner")
 
+print("Language is: {}".format(best_guess.language))
+
+# prints: Language is: german
+```
 `predict_language.py`
 ================
 Or you can use the script I included, which takes a string or text file from the command line and guesses it's language. It loads all files of the format &lt;languagename&gt;_language.txt in the current directory and builds models for them
@@ -41,7 +42,7 @@ Or you can use the script I included, which takes a string or text file from the
 
 Example:
 
-    predict_language.py -s "Fryderyk Franciszek Chopin polski kompozytor i pianista"
+    $ predict_language.py -s "Fryderyk Franciszek Chopin polski kompozytor i pianista"
     Loading model for ancient-greek - ancient-greek_language_ngrams.txt
     Loading model for polish - polish_language_ngrams.txt
     .
