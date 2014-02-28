@@ -1,3 +1,6 @@
+import sys
+sys.path.append(r'C:\\Python27\\Lib')
+sys.path.append(r'C:\\Users\\joe\\Documents\\language_predictor\\')
 import pickle
 import os.path as path
 import re
@@ -31,9 +34,10 @@ class TrainData(object):
     def __init__(self, language_name, training_file):
         self.language_name = language_name
         self.training_file = training_file
+
         self.ngram = None
 
-    def build_ngrams(self):
+    def build_ngrams_orig(self):
         """
             If there's a pickle for the model, we load it
             Otherwise build the model from scratch
@@ -48,6 +52,15 @@ class TrainData(object):
             print("Loading model for {} - {}".format(self.language_name, self.pickle_name()))
             self.load_pickle()
             return self.ngram
+
+    def build_ngrams(self):
+        """
+            If there's a pickle for the model, we load it
+            Otherwise build the model from scratch
+        """
+        with open(self.training_file, 'r') as f:
+            self.ngram = NGram(f.read(), self.language_name)
+
 
     def load_pickle(self):
         with open(self.pickle_name(), 'rb') as pickle_file:
@@ -122,8 +135,6 @@ class NGram(object):
         N-Grams. Return a float value between 0 and 1 where 0 indicates that
         the two NGrams are exactly the same.
         """
-        if not isinstance(other, NGram):
-            raise TypeError("Can't compare NGram with non-NGram object.")
 
         if self.n != other.n:
             raise TypeError("Can't compare NGram objects of different size.")
